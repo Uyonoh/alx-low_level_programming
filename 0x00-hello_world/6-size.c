@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	/* Check memory sizes */
 	char c;
 	int i;
 	long int li;
