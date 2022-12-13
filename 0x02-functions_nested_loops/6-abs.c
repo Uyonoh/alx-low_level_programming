@@ -3,7 +3,7 @@
 /**
  * _abs - print absolute val
  *
- * return
+ * Return: Always int.
  */
 
 int _abs(int n)

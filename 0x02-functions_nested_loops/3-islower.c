@@ -3,7 +3,7 @@
 /**
  * islower prints
  *
- * return none
+ * Return: Always int.
  */
 
 int _islower(int c)

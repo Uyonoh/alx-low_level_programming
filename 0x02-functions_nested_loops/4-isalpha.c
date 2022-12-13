@@ -3,7 +3,7 @@
 /**
  * isalpha checks alphabets
  *
- * return none
+ * Return: Always int.
  */
 
 int _isalpha(int c)

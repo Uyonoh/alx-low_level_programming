@@ -3,7 +3,7 @@
 /**
  * print_sign - prints sign of number
  *
- * return 1, 0 0r -1
+ * Return: Always 1, 0 0r -1.
  */
 
 int print_sign(int n)

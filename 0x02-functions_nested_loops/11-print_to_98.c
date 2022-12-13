@@ -4,7 +4,7 @@
 /**
  * print nums to 98
  *
- * return 0
+ * Return: Always 0.
  */
 
 void print_to_98(int n)

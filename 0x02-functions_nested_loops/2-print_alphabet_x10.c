@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - prints alps 10 x
  *
- * Return: void
+ * Return: Always void.
  */
 
 

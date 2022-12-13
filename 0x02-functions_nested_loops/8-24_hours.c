@@ -2,9 +2,9 @@
 
 
 /**
- * jprint_time - printer
+ * print_time - printer
  *
- * return 0
+ * Return: Always 0.
  */
 
 void print_time(int h, int m)
@@ -34,7 +34,7 @@ void print_time(int h, int m)
 /**
  * jack-bauer - prints all minutes
  *
- * return 0
+ * Return: Always 0.
  */
 
 void jack_bauer(void)
