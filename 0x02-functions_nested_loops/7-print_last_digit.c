@@ -1,6 +1,6 @@
 # include "main.h"
 
-/*
+/**
  *  print_last_digit - print the last digit
  *
  *  return 0
@@ -15,6 +15,6 @@ int print_last_digit(int n)
 		n = n * -1;
 	}
 	c = n % 10;
-	_putchar('0'+ c);
+	_putchar('0' + c);
 	return (c);
 }

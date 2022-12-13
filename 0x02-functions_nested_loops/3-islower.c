@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * islower prints
  *
  * return none
@@ -8,12 +8,15 @@
 
 int _islower(int c)
 {
+	int r;
+
 	if ((c > 97) && (c < 122))
 	{
-		return (1);
+		r = 1;
 	} else
 	{
-		return (0);
+		r = 0;
 	}
+	return (r);
 }
 

@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * times tabls
  *
  * return 0
@@ -37,5 +37,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-	return;
 }

@@ -1,6 +1,6 @@
 # include "main.h"
 
-/*
+/**
  * _abs - print absolute val
  *
  * return
@@ -8,11 +8,14 @@
 
 int _abs(int n)
 {
+	int r;
+
 	if (n >= 0)
 	{
-		return (n);
+		r = n;
 	} else
 	{
-		return (n * -1);
+		r = n * -1;
 	}
+	return (r);
 }

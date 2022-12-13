@@ -1,8 +1,8 @@
 #include "main.h"
 
 
-/*
- * jack-bauer - prints all minutes
+/**
+ * jprint_time - printer
  *
  * return 0
  */
@@ -29,8 +29,13 @@ void print_time(int h, int m)
 		_putchar('0' + (m % 10));
 	}
 	_putchar('\n');
-	return;
 }
+
+/**
+ * jack-bauer - prints all minutes
+ *
+ * return 0
+ */
 
 void jack_bauer(void)
 {
@@ -47,8 +52,6 @@ void jack_bauer(void)
 			h++;
 		}
 	}
-
-	
 }
 
 
