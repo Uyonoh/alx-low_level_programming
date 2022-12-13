@@ -2,7 +2,9 @@
 #include "main.h"
 
 /**
- * print nums to 98
+ * print_to_98 - print nums to 98
+ *
+ * n - int
  *
  * Return: Always 0.
  */
