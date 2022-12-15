@@ -4,7 +4,7 @@
 /**
  * print_to_98 - print nums to 98
  *
- * n - int
+ * @n - int
  *
  * Return: Always 0.
  */
