@@ -1,5 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
   * print_number - Prints an integer.
@@ -9,19 +8,36 @@
   */
 void print_number(int n)
 {
-	unsigned int k = n;
+	get_int(n);
+}
 
-	if (n < 0)
+int get_int(int n)
+{
+	int k = n;
+	int j;
+	int i;
+
+	if (n < 10)
 	{
-		n *= -1;
-		k = n;
-		_putchar('-');
+		_putchar('0' + n);
+		return (0);
 	}
 
-	k /= 10;
+	while (k >= 10)
+	{
+		k /= 10;
+		i++;
+	}
+	_putchar('0' + k);
+	if (i == 1)
+	{
+		_putchar('0' + (k % 10));
+		return (0);
+	}
 
-	if (k != 0)
-		print_number(k);
+	j = k * (10 ^ i);
+	j = n - j;
 
-	_putchar((unsigned int) n % 10 + '0');
+	get_int(j);
+	return (0);
 }
