@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -8,6 +6,7 @@
   *
   * Return: Nothing!
   */
+
 void print_number(int n)
 {
 	get_int(n);
@@ -53,7 +52,7 @@ int get_int( int n)
 		_putchar('0' + (n % 10));
 		return (0);
 	}
-	x = pow(10, i);
+	x = _pow(10, i);
 	j = k * x;
 	j = n - j;
 
@@ -93,3 +92,26 @@ int ilen(int n)
 	}
 	return i;
 }
+
+/**
+ * _pow - raise an integer by a power
+ * @x:base integer
+ * @e:power
+ * Return: x eaised to power e
+ */
+
+int _pow(int x, int e)
+{
+	int i;
+	
+	i = x;
+	while (e > 1)
+	{
+		i *= x;
+		e--;
+	}
+	return (i);
+}
+	
+		
+	
