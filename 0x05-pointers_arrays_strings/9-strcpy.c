@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
  * _strcpy - copy a string to buffer
@@ -12,15 +13,15 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
+	if (_strlen(src) < 1)
+	{
+		dest = "";
+		return (dest);
+	}
+
 	i = 0;
 	while (i >= 0)
-	{
-		if (src == "")
-		{
-			dest = "";
-			break;
-		}
-		
+	{	
 		dest[i] = src[i];
 		i++;
 
