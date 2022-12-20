@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -35,8 +34,15 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	return (0);
+	return (n * si);
 }
+
+/**
+ * _format - add value to a int(behind)
+ * @p: pointer to ints
+ * @d: added value
+ * Return: integer
+ */
 
 void _format(int *p, int d)
 {
