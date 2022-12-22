@@ -2,7 +2,8 @@
 
 /**
  * reverse_array - reverse contents of an array
- * @n - length of array
+ * @a: array
+ * @n: length of array
  *
  * Return: void
  */

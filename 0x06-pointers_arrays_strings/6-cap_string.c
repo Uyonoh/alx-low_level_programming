@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * cap_string - capitalize all words in string
+ * _strin - checks if char exists in string
  * @str: string
+ * @c: char
  *
  * Return: pointer to str
  */
@@ -23,6 +24,13 @@ int _strin(char *str, char c)
 	return (0);
 }
 
+/**
+ * cap_string - capitalize all words in string
+ * @str: string
+ *
+ * Return: pointer to str
+ */
+
 char *cap_string(char *str)
 {
 	int i;
@@ -30,7 +38,7 @@ char *cap_string(char *str)
 
 	i = 0;
 
-	while ( str[i])
+	while (str[i])
 	{
 		if (_strin(seperators, str[i]))
 		{

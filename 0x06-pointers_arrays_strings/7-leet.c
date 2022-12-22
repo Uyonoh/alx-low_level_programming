@@ -41,7 +41,7 @@ int _index(char *str, char c)
 		i = 0;
 		while (str[i])
 		{
-			if(str[i] == c)
+			if (str[i] == c)
 			{
 				break;
 			}
@@ -74,7 +74,7 @@ char *leet(char *str)
 		if (_strin(letters, str[i]))
 		{
 			index = _index(letters, str[i]);
-			
+
 			if (index >= 5)
 			{
 				index -= 5;
