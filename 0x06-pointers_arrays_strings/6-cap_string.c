@@ -40,7 +40,7 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
-		if (_strin(seperators, str[i]) || i = 0)
+		if (_strin(seperators, str[i]) || i == 0)
 		{
 			if ((str[i + 1] >= 97) && (str[i + 1] <= 122))
 			{
