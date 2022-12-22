@@ -25,7 +25,7 @@ int _strin(char *str, char c)
 }
 
 /**
- * _index - get the index of a character in a string
+ * _index - get the index of a character in a string disregaurding case
  * @str: string
  * @c: character
  *
@@ -36,12 +36,15 @@ int _index(char *str, char c)
 {
 	int i;
 
-	if (_strin(str, c))
+	if (c >= 65 && c <= 90)
+		c += 32;
+
+	if (_strin(str, c) || _strin(str, c - 32))
 	{
 		i = 0;
 		while (str[i])
 		{
-			if (str[i] == c)
+			if (str[i] == c || str[i] == c - 32)
 			{
 				break;
 			}
@@ -65,20 +68,15 @@ char *leet(char *str)
 {
 	int i;
 	int index;
-	char letters[] = "aeotlAEOTL";
+	char letters[] = "aeotl";
 	int numbers[] = {'4', '3', '0', '7', '1'};
 
 	i = 0;
 	while (str[i])
 	{
-		if (_strin(letters, str[i]))
+		if (_index(letters, str[i]) >= 0)
 		{
 			index = _index(letters, str[i]);
-
-			if (index >= 5)
-			{
-				index -= 5;
-			}
 			str[i] = numbers[index];
 		}
 		i++;
