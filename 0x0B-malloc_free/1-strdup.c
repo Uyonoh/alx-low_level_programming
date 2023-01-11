@@ -1,8 +1,3 @@
-/*
- * File: 1-strdup.c
- * Auth: Brennan D Baraban
- */
-
 #include "holberton.h"
 #include <stdlib.h>
 

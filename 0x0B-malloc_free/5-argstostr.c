@@ -1,8 +1,3 @@
-/*
- * File: 5-argstostr.c
- * Auth: Brennan D Baraban
- */
-
 #include "holberton.h"
 #include <stdlib.h>
 
